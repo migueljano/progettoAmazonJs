@@ -27,16 +27,17 @@ submitBtn.addEventListener("click", function () {
             if (resp.ok) {
                 return resp.json();
             } else {
-                throw new Error("Errore nella richiesta")
+                throw new Error("Errore nella richiesta");
             }
         })
         .then((data) => {
             console.log("Telefono aggiunto:", data);
             sessionStorage.setItem("newPhone", JSON.stringify(data));
-            window.location.href = "../homepage.html";
+            window.location.href = "detagli.html";
         })
         .catch((error) => {
             console.error("Errore:", error);
         });
+        
 });
 

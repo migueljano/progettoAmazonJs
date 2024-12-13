@@ -1,3 +1,7 @@
+//  La apikey utilizzata per l'autorizzaione
+// const apiKey = "wVihUJknuZdtm58zrcmyfqdE8RtnRMO728eM4QhV42phYMh15zaIKiv0";
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const params = new URLSearchParams(window.location.search);
     const id = params.get("id");
